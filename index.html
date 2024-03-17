@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>js/jq</title>
+  <!-- css links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- text color chang  -->
+    <h2>Testing W3.JS in HTML</h2>
+    <p>Click the button to add a red background color to all h2 elements.</p>
+    <button onclick="textColorChang()">Add Style</button>
+    <div id="Londons" class="city">
+      <h2 id="h22">London</h2>
+      <p id="h2">London is the capital city of England.</p>
+    </div>
+
+
+
+    <!-- background color chang  -->
+    <h2 class="text-success">Testing W3.JS in HTML</h2>
+    <p>Click the button to add a red background color to id="London".</p>
+    <p>
+      <button class="btn btn-info" onclick="backgroundChang()">Add Style</button>
+    </p>
+    <div id="london" class="l_city">
+      <h2>London</h2>
+      <p>London is the capital city of England.</p>
+    </div>
+    <div id="paris" class="p_city">
+      <h2>Paris</h2>
+      <p>Paris is the capital of France.</p>
+    </div>
+    <hr>
+    <!-- claculation digit  -->
+    <h2>calculation theis digit.</h2>
+    <p id="d_cal">{(5+6)*10}</p>
+    <button class="btn btn-dark" onclick="calculationDigit()">click</button>
+
+    <!-- heldoly  -->
+    <h2>JavaScript Statements</h2>
+    <p>JavaScript code blocks are written between { and }</p>
+    <button class="btn btn-primary" onclick="helDoly()">Click Me!</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <hr>
+    <!-- hello doly  -->
+    <h2>JavaScript Statements</h2>
+    <p>In HTML, JavaScript statements are executed by the browser.</p>
+    <p id="h_doly"></p>
+    <hr>
+    <h2>The window.print() Method</h2>
+    <p>Click the button to print the current page.</p>
+    <button onclick="window.print()">Print this page</button>
+    <hr>
+    <!-- document right  -->
+    <h2>My First Web Page</h2>
+    <p>My first paragraph.</p>
+    <p>Never call document.write after the document has finished loading.
+      It will overwrite the whole document.</p>
+    <script>
+      document.write(5 + 6);
+    </script>
+    <hr>
+    <!-- calculation java  -->
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+    <p id="cal_java"></p>
+    <hr>
+    <!-- paragraph chang  -->
+    <h2>Demo JavaScript in Head</h2>
+    <p id="p_chang">A Paragraph.</p>
+    <button class="btn btn-dark" onclick="paraChang()">Try it</button>
+
+    <!-- text java body  -->
+    <h2>JavaScript in Body</h2>
+    <p id="j_body"></p>
+    <hr>
+    <!-- show hidden html  -->
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="text_hidden" style="display:none">Hello JavaScript!</p>
+    <button class="btn btn-primary" onclick="textHidden()">Click me</button>
+    <hr>
+    <!-- text hide -->
+    <h2>What Can JavaScript Do?</h2>
+    <p id="text_hi">JavaScript can hide HTML elements.</p>
+    <button class="btn btn-primary" onclick="textHide()">Click me</button>
+    <hr>
+    <!-- text chang  -->
+    <h2 class="text-danger">click the button to chang the text</h2>
+    <button class="btn btn-warning" onclick="dextChang()">Text chang</button>
+    <h3 id="text_d">criket best play</h3>
+    <hr>
+    <!-- font size chang  -->
+    <h2 class="text-success">What Can JavaScript Do?</h2>
+    <button class="btn btn-primary" onclick="fontSize()">Click Me!</button>
+    <p id="s_35">JavaScript can change the style of an HTML element.</p>
+    <hr>
+    <!-- click hide london  -->
+    <h2 class="text-primary">Click on "Hide London</h2>
+    <button class="btn btn-primary" onclick="hideLondon()">hide London</button>
+    <div id="l_don">
+      <h2>London</h2>
+      <p>London is the capital city of England.</p>
+      <p>London is the capital city of England.</p>
+      <p>London is the capital city of England.</p>
+      <p>London is the capital city of England.</p>
+    </div>
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+    <hr>
+    <!-- tag name text alert  -->
+    <h2 class="text-info">click the button to chang the text</h2>
+    <button class="btn btn-dark" onclick="tagNameTextChang()">Click the button</button>
+    <h3 class="cntc_c">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc_c">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc_c">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc_c">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc_c">Lorem ipsum dolor sit amet.</h3>
+    <hr>
+
+    <!-- class name text chang  -->
+    <h2 class="text-info">click the button to chang the text</h2>
+    <button class="btn btn-dark" onclick="classNameTextChang()">Click the button</button>
+    <h3 class="cntc">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc">Lorem ipsum dolor sit amet.</h3>
+    <h3 class="cntc">Lorem ipsum dolor sit amet.</h3>
+    <hr>
+    <!-- variable3 -->
+    <h2 class="text-danger">click the button to calculate the data</h2>
+    <button class="btn btn-dark" onclick="calculationIn1()">Calculation</button>
+    <h3 id="valu_in1">valu in</h3>
+    <hr>
+    <!-- variable2 -->
+    <h2 class="text-danger">click the button to calculate the data</h2>
+    <button class="btn btn-dark" onclick="calculationIn()">Calculation</button>
+    <h3 id="valu_in">valu in</h3>
+    <hr>
+    <!-- variable1  -->
+    <h2 class="text-danger">click the button to calculate the data</h2>
+    <button class="btn btn-info" onclick="calculation()">Calulation</button>
+    <h3 id="valu">valu</h3>
+    <hr>
+    <!-- paragraph chang  -->
+    <h2 class="text-info">click the button to chang the paragraph</h2>
+    <button class="btn btn-dark" onclick="pargraphChang()">click to chang</button>
+    <p id="p_c">Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <!-- show/hide  -->
+    <h2 class="text-danger">click the button to show/hide the text</h2>
+    <button class="btn btn-dark" onclick="show()">show</button>
+    <button class="btn btn-dark" onclick="hide()">hide</button>
+    <img id="shabuz" src="imges/shabuz.jpg" alt="#">
+    <hr>
+    <!-- color chang  -->
+    <h2 class="text-info">click the button to chang the color text</h2>
+    <button class="btn btn-dark" onmouseleave="colorChang()">text color chang</button>
+    <h3 id="c_c">shabuz hossen 9</h3>
+    <hr>
+    <!-- bulb on/off  -->
+    <h2 class="text-danger">click the button to on/off the bulb</h2>
+    <button class="btn btn-dark" onclick="bulbOn()">bulb on</button>
+    <button class="btn btn-dark" onclick="bulbOff()">bulb off</button>
+    <img id="bulb" src="imges/off.gif" alt="">
+    <hr>
+    <!-- text chang  -->
+    <h2 class="text-danger">click the button to chang the text</h2>
+    <button class="btn btn-dark" onclick="textChang()">Text chang</button>
+    <h3 id="text_c">Lorem, ipsum dolor.</h3>
+    <hr>
+    <h2>click the button to chang the text</h2>
+    <button onclick="mextChang()">Text chang</button>
+    <h3 id="text_b">criket best play</h3>
+    <hr>
+    <!-- show date  -->
+    <h2 class="text-info">click the button to show the date</h2>
+    <button class="btn btn-dark" onclick="showDate()">show date</button>
+    <h3 id="s_d">show date</h3>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js "></script>
+
+</body>
+
+</html>
